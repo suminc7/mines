@@ -21,9 +21,9 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "start": "npm run develop",
-    "gh-pages": "node ghpages.js",
+    "gh-pages": "npm run build && node ghpages.js",
     "serve": "gatsby serve"
   },
   "devDependencies": {
